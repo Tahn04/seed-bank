@@ -1,0 +1,12 @@
+<p>main-page works!</p>
+<section>
+    <form>
+      <input type="text" placeholder="Filter by category" />
+      <button class="primary" type="button">Search</button>
+    </form>
+  </section>
+  <section class="results">
+    <div *ngFor="let seed of seedCatalogList">
+        <app-seed-catalog [seed]="seed"></app-seed-catalog>
+    </div>
+  </section>

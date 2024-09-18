@@ -1,0 +1,10 @@
+<p>seed-catalog works!</p>
+    <section class="listing" *ngIf="seed">
+      <img
+        class="listing-photo"
+        [src]="seed.img"
+        alt="Photo of {{ seed.name }}"
+        crossorigin
+      />
+      <h2 class="listing-heading">{{ seed.name }}</h2>
+    </section>
